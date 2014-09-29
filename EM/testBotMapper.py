@@ -4,7 +4,7 @@ import json
 
 
 url = 'http://localhost/x2r_php/em/mapper.php'
-rc = open('../../data/alf.rdf', 'rb').read()
+rc = open('../../data/alf2.rdf', 'rb').read()
 
 m = {}
 
@@ -23,11 +23,19 @@ em2['status'] = ''
 em2['term'] = ''
 em2['lineNumbers'] = ''
 em2['originalURI'] = 'http://openisdm.com/MAD/facility/FAC073863'
-em2['replacedURI'] ='http://replace.success2'
+em2['replacedURI'] ='http://replace.success2#gentry'
+
+#multiple match testing
+em3 = {}
+em3['status'] = ''
+em3['term'] = ''
+em3['lineNumbers'] = ''
+em3['originalURI'] = 'http://openisdm.com/MAD/facility/FAC048003_alf#gentry'
+em3['replacedURI'] ='http://replace.success3'
 
 
 m['metadata'] = []
-m['mapping'] = [em1, em2]
+m['mapping'] = [em1, em2, em3]
 
 mapping = json.dumps(m)
 
