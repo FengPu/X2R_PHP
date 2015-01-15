@@ -1,7 +1,6 @@
-X2R-EM
+X2R-PHP
 ======
-
-X2R is a Tool Set for translating raw data into Linked Data.
+X2R-PHP is a PHP implementation of X2R, where X2R is a tool set for translating raw data into Linked Data.
 X2R is composed of several tools:
 
    * Extractor
@@ -22,6 +21,9 @@ finding or minting better URIs.
 When you have the mapping from original URIs to new URIs, Mapper can
 replace the URIs based on the mapping automatically.
 
-The document of Extractor and Mapper is hosted in http://x2r-me.readthedocs.org/en/latest/
+Currently, this work has been done for planned milestone, and is forked to https://github.com/OpenISDM-VR/X2R for further collaboration and extension.
+
+The document is now holded in http://openisdm-x2r.readthedocs.org/en/latest/. 
+
 
 N.B. The document is continuously refining.
